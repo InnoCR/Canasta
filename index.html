@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canastas Navideñas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .navbar {
+            background-color: #1f1f1f;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+        }
+
+        .card-title,
+        .card-text {
+            color: #ffffff;
+        }
+
+        .nav-tabs .nav-link {
+            color: #ffffff;
+            border: 1px solid transparent;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #FF7F50;
+            color: #FFFFFF;
+            border-color: #FF4500;
+        }
+
+        .countdown {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 20px;
+            color: #FF7F50;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand">
+                Inversiones Calvo Medrano
+            </a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container my-5">
+        <div class="d-flex flex-column align-items-center my-4 text-center">
+            <!-- Contenedor para el logo y los textos -->
+            <div class="d-flex align-items-center justify-content-center">
+                <!-- Títulos y descripción -->
+                <div>
+                    <span style="font-size: 2rem;background-color: #343a40;color: #fff; padding: 0.2rem 0.5rem; border-radius: 5px;">
+                        2025
+                    </span>
+                    <h1 class="fw-bold" style="font-size: 2.5rem; color: #FF7F50; margin-bottom: 0;">
+                        Canastas Navideñas
+                    </h1>
+                    <p style="font-size: 1.2rem; color: #FFFFFF;">Juan Pablo Segundo II</p>
+                </div>
+            </div>
+
+            <!-- Descripción -->
+            <p style="font-size: 1rem; color: #D3D3D3; margin-top: 10px;">
+                ¡Descubre nuestras maravillosas canastas navideñas, diseñadas para llenar tu hogar de alegría y celebrar
+                la magia de la Navidad con quienes más amas!
+            </p>
+        </div>
+
+        <!-- Navegación de Tabs -->
+        <ul class="nav nav-tabs justify-content-center" id="canastaTabs" role="tablist">
+            <!-- Enlace Canasta Navideña # 1 -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="canasta1-tab" data-bs-toggle="tab" data-bs-target="#canasta1"
+                    type="button" role="tab" aria-controls="canasta1" aria-selected="true">Canasta 1</button>
+            </li>
+            <!-- Enlace Canasta Navideña # 2 -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="canasta2-tab" data-bs-toggle="tab" data-bs-target="#canasta2" type="button"
+                    role="tab" aria-controls="canasta2" aria-selected="false">Canasta 2</button>
+            </li>
+            <!-- Enlace Canasta Navideña # 3 -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="canasta3-tab" data-bs-toggle="tab" data-bs-target="#canasta3" type="button"
+                    role="tab" aria-controls="canasta3" aria-selected="false">Canasta 3</button>
+            </li>
+            <!-- Enlace Canasta Navideña # 4 -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="canasta4-tab" data-bs-toggle="tab" data-bs-target="#canasta4" type="button"
+                    role="tab" aria-controls="canasta4" aria-selected="false">Canasta 4</button>
+            </li>
+            <!-- Enlace Canasta Navideña # 5 -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="canasta5-tab" data-bs-toggle="tab" data-bs-target="#canasta5" type="button"
+                    role="tab" aria-controls="canasta5" aria-selected="false">Canasta 5</button>
+            </li>
+            <!-- Enlace Fechas de entrega -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="fechas-tab" data-bs-toggle="tab" data-bs-target="#fechas" type="button"
+                    role="tab" aria-controls="fechas" aria-selected="false">Fechas de Entrega</button>
+            </li>
+        </ul>
+
+        <!-- Contenido de Tabs -->
+        <div class="tab-content mt-3">
+            <!-- Contenido Canasta navideña # 1 -->
+            <div class="tab-pane fade show active" id="canasta1" role="tabpanel" aria-labelledby="canasta1-tab">
+                <div class="card mx-auto" style="max-width: 900px; background-color: #343a40; color: #fff;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Canasta Navideña 1</h5>
+                        <p class="card-text text-center">Contiene los siguientes productos:</p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table table-dark table-striped">
+                                    <tbody>
+                                        <tr><td class="text-center">1</td><td>Botella de vino Riunite</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de Rompope</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de frutas</td></tr>
+                                        <tr><td class="text-center">2</td><td>Kg de uvas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de manzanas rojas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de peras</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de semillas mixtas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de bombones Bom o Bom</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de galletas surtidas Pozuelo</td></tr>
+                                        <tr><td class="text-center">1</td><td>Pepsi de 2.5 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de empanadas de piña</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de chocolates surtidos Gallito</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de café Leyenda</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-dark table-striped">
+                                    <tbody>
+                                        <tr><td class="text-center">1</td><td>Queque seco pequeño</td></tr>
+                                        <tr><td class="text-center">1</td><td>Frasco de chilera Tica</td></tr>
+                                        <tr><td class="text-center">1</td><td>Pieza de tamal asado casero</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de Marshmallows</td></tr>
+                                        <tr><td class="text-center">1</td><td>Pollo asado</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja plástica de 68 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Fracción de lotería navideña</td></tr>
+                                        <tr><td class="text-center">1</td><td>
+                                            <details open>
+                                                <summary>
+                                                    Acción para una rifa de:
+                                                </summary>
+                                                <ul class="list-unstyled mt-3">
+                                                    <li>1<sup>er</sup> Premio de ₡150 mil en efectivo</li>
+                                                    <li>2<sup>do</sup> Premio de ₡75 mil en efectivo</li>
+                                                    <li>3<sup>er</sup> Premio de ₡25 mil en efectivo</li>
+                                                </ul>
+                                                <p>La rifa se efectuará el día domingo en combinación de la lotería navideña</p>
+                                            </details>
+                                        </td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card mx-auto" style="max-width: 700px; background-color: #343a40; color: #fff; padding: 20px;">
+                            <h5 class="text-end">Valor de la canasta: <strong>₡95,000</strong></h5>
+                            <hr />
+                            <!-- Pagos de la canasta -->
+                            <div class="row">
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Semanal: </span><strong>₡2,000</strong></p>
+                                </div>
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Quincenal: </span><strong>₡4,000</strong></p>
+                                </div>
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Mensual: </span><strong>₡8,000</strong></p>
+                                </div>
+                            </div>
+                            <!-- Botón de WhatsApp -->
+                             <br/>
+                            <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
+                                <a href="https://wa.me/50688566516?text=https%3A%2F%2Finnocr.com%0ABuen%20d%C3%ADa%2C%20me%20interesa%20la%20Canasta%20Navide%C3%B1a%20%231%2C%0A%C2%BFMe%20podr%C3%ADa%20brindar%20m%C3%A1s%20informaci%C3%B3n%20por%20favor%3F"
+                                    class="btn btn-success btn-lg w-100 w-md-auto" target="_blank">
+                                    Solicitar Canasta Navideña 1
+                                </a>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>                
+            </div>
+            <!-- Contenido  Canasta Navideña # 2 -->
+            <div class="tab-pane fade" id="canasta2" role="tabpanel" aria-labelledby="canasta2-tab">
+                <div class="card mx-auto" style="max-width: 900px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Canasta Navideña 2</h5>
+                        <p class="card-text text-center">Contiene los siguientes productos:</p>
+                    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table table-dark table-striped">
+                                    <tbody>
+                                        <tr><td class="text-center">2</td><td>Kg Bistec de cerdo adobado</td></tr>
+                                        <tr><td class="text-center">2</td><td>Kg de uvas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de manzanas rojas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Refresco Pepsi de 2.5 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de rompope Dos Pinos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de chocolates surtido Gallito</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de bombones Bom o Bom de 15 unidades</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de galletas familiar Pozuelo</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de galletas Soda de 20 unidades</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de cereal Kellogg's pequeña</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de frutas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de semillas mixtas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de leche condensada</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de papas tostadas familiar</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de Mejitos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de frijoles molidos</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-dark table-striped">
+                                    <tbody>
+                                        <tr><td class="text-center">1</td><td>Paquete de empanaditas de piña</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de Marshmallows</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de chocolates Choys</td></tr>
+                                        <tr><td class="text-center">1</td><td>Chilera Tica</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de chocolates Vizzio</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de pan para hot dog</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de salchichas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Mayonesa</td></tr>
+                                        <tr><td class="text-center">1</td><td>Salsa de tomate</td></tr>
+                                        <tr><td class="text-center">1</td><td>Recipiente o caja plástica de excelente calidad</td></tr>
+                                        <tr><td class="text-center">1</td><td>Fracción de lotería navideña</td></tr>
+                                        <tr><td class="text-center">1</td><td>
+                                            <details open>
+                                                <summary>
+                                                    Acción para una rifa de:
+                                                </summary>
+                                                <ul class="list-unstyled mt-3">
+                                                    <li>1<sup>er</sup> Premio de ₡150 mil en efectivo</li>
+                                                    <li>2<sup>do</sup> Premio de ₡75 mil en efectivo</li>
+                                                    <li>3<sup>er</sup> Premio de ₡25 mil en efectivo</li>
+                                                </ul>
+                                                <p>La rifa se efectuará el día domingo en combinación de la lotería navideña</p>
+                                            </details>
+                                        </td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card mx-auto" style="max-width: 700px; background-color: #343a40; color: #fff; padding: 20px;">
+                            <h5 class="text-end">Valor de la canasta: <strong>₡140,000</strong></h5>
+                            <hr />
+                            <!-- Pagos de la canasta -->
+                            <div class="row">
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Semanal: </span><strong>₡3,000</strong></p>
+                                </div>
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Quincenal: </span><strong>₡6,000</strong></p>
+                                </div>
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Mensual: </span><strong>₡12,000</strong></p>
+                                </div>
+                            </div>
+                            <!-- Botón de WhatsApp -->
+                            <br/>
+                            <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
+                                <a href="https://wa.me/50688566516?text=https%3A%2F%2Finnocr.com%0ABuen%20d%C3%ADa%2C%20me%20interesa%20la%20Canasta%20Navide%C3%B1a%20%232%2C%0A%C2%BFMe%20podr%C3%ADa%20brindar%20m%C3%A1s%20informaci%C3%B3n%20por%20favor%3F"
+                                    class="btn btn-success btn-lg w-100 w-md-auto" target="_blank">
+                                    Solicitar Canasta Navideña 2
+                                </a>
+                            </div>
+                        </div>                      
+                    </div>                    
+                </div>
+            </div>
+            <!-- Contenido  Canasta Navideña # 3 -->
+            <div class="tab-pane fade" id="canasta3" role="tabpanel" aria-labelledby="canasta3-tab">
+                <div class="card mx-auto" style="max-width: 900px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Canasta Navideña 3</h5>
+                        <p class="card-text text-center">Contiene los siguientes productos:</p>
+                    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table table-dark table-striped">
+                                    <tbody>
+                                        <tr><td class="text-center">1</td><td>Litros de Whisky Jhonnie Walker rojo</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de chuletas de cerdo</td></tr>
+                                        <tr><td class="text-center">2</td><td>Kg de bistec de cerdo adobado</td></tr>
+                                        <tr><td class="text-center">3</td><td>Kg de tocino</td></tr>
+                                        <tr><td class="text-center">2</td><td>Kg de uvas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de manzanas rojas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de peras</td></tr>
+                                        <tr><td class="text-center">1</td><td>Refresco Pepsi de 3 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de rompope Dos Pinos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de jugo de naranja Dos Pinos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Botella de vino Riunite</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de chocolate surtido Gallito</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de bombones Bom o Bom de 15 unidades</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de galletas familia Pozuelo</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de jaleas Tricopilia</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de cereal Kellogg's pequeña</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de frutas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de semillas mixtas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de leche condensada Nestlé</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de papas tostadas familiar</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-dark table-striped">
+                                    <tbody>
+                                        <tr><td class="text-center">1</td><td>Paquete de Mejitos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de mayonesa</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de Marshmallows</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de chocolates Choys</td></tr>
+                                        <tr><td class="text-center">1</td><td>Queque seco pequeño</td></tr>
+                                        <tr><td class="text-center">1</td><td>Chilera Tica</td></tr>
+                                        <tr><td class="text-center">1</td><td>Frasco de salsa tomate</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de café Leyenda</td></tr>
+                                        <tr><td class="text-center">1</td><td>Frasco de cebollitas en vinagre</td></tr>
+                                        <tr><td class="text-center">1</td><td>Tamal asado casero</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de empanaditas de piña</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja plástica de 32 litros para las carnes</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja plástica de 68 litros para los demás productos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Fracción de lotería navideña</td></tr>
+                                        <tr><td class="text-center">1</td><td>
+                                            <details open>
+                                                <summary>
+                                                    Acción para una rifa de:
+                                                </summary>
+                                                <ul class="list-unstyled mt-3">
+                                                    <li>1<sup>er</sup> Premio de ₡150 mil en efectivo</li>
+                                                    <li>2<sup>do</sup> Premio de ₡75 mil en efectivo</li>
+                                                    <li>3<sup>er</sup> Premio de ₡25 mil en efectivo</li>
+                                                </ul>
+                                                <p>La rifa se efectuará el día domingo en combinación de la lotería navideña</p>
+                                            </details>
+                                        </td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card mx-auto" style="max-width: 700px; background-color: #343a40; color: #fff; padding: 20px;">
+                            <h5 class="text-end">Valor de la canasta: <strong>₡170,000</strong></h5>
+                            <hr />
+                            <!-- Pagos de la canasta -->
+                            <div class="row">
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Semanal: </span><strong>₡3,500</strong></p>
+                                </div>
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Quincenal: </span><strong>₡7,000</strong></p>
+                                </div>
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Mensual: </span><strong>₡15,000</strong></p>
+                                </div>
+                            </div>
+                            <!-- Botón de WhatsApp -->
+                                <br/>
+                            <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
+                                <a href="https://wa.me/50688566516?text=https%3A%2F%2Finnocr.com%0ABuen%20d%C3%ADa%2C%20me%20interesa%20la%20Canasta%20Navide%C3%B1a%20%233%2C%0A%C2%BFMe%20podr%C3%ADa%20brindar%20m%C3%A1s%20informaci%C3%B3n%20por%20favor%3F"
+                                    class="btn btn-success btn-lg w-100 w-md-auto" target="_blank">
+                                    Solicitar Canasta Navideña 3
+                                </a>
+                            </div>
+                        </div>                      
+                    </div>                    
+                </div>
+            </div>
+            <!-- Contenido  Canasta Navideña # 4 -->
+            <div class="tab-pane fade" id="canasta4" role="tabpanel" aria-labelledby="canasta4-tab">
+                <div class="card mx-auto" style="max-width: 900px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Canasta Navideña 4</h5>
+                        <p class="card-text text-center">Contiene los siguientes productos:</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table table-dark table-striped">
+                                    <tbody>
+                                        <tr><td class="text-center">1</td><td>Kg de chuletas de cerdo</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de costilla de cerdo</td></tr>
+                                        <tr><td class="text-center">2</td><td>Kg de bistec de punta de Solomo de Res</td></tr>
+                                        <tr><td class="text-center">3</td><td>Kg de bistec de cerdo adobado</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de manzanas rojas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de peras</td></tr>
+                                        <tr><td class="text-center">2</td><td>Kg de uvas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Refresco Pepsi de 3 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de jugo de naranja Dos Pinos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de rompope Dos Pinos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de Baileys</td></tr>
+                                        <tr><td class="text-center">1</td><td>Botella de vino Riunite grande</td></tr>
+                                        <tr><td class="text-center">1</td><td>Pata de Elefante Ron Flor de Caña 4 años 1.750 ml</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de frutas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de semillas mixtas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de leche condensada Nestlé</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de chocolates surtido Gallito</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de bombones Bom o Bom de 15 unidades</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de galletas familiar Pozuelo</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de cereal Kellogg's mediana</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de galletas Soda de 20 unidades</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de jaleas Tricopilia</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de tocineta preformada</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de papas tostadas familiar</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-dark table-striped">
+                                    <tbody>
+                                        <tr><td class="text-center">1</td><td>Paquete de Mejitos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de tacos el Arreo</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de Marshmallows</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de chocolates Choys</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de frijoles molidos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de cafe leyenda de 250 grs</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de empanaditas de piña</td></tr>
+                                        <tr><td class="text-center">1</td><td>Chilera Tica</td></tr>
+                                        <tr><td class="text-center">1</td><td>Salsa de tomate</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de mayonesa</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de pan para hamburguesas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de tortas para hamburguesas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de jamón de ½ kilo</td></tr>
+                                        <tr><td class="text-center">1</td><td>Queque seco grande</td></tr>
+                                        <tr><td class="text-center">3</td><td>Piñas de tamales o 1 pollo asado a escoger</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja plástica de excelente material de 45 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja plástica de 102 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Fracción de Lotería Navideña</td></tr>
+                                        <tr><td class="text-center">1</td><td>
+                                            <details open>
+                                                <summary>
+                                                    Acción para una rifa de:
+                                                </summary>
+                                                <ul class="list-unstyled mt-3">
+                                                    <li>1<sup>er</sup> Premio de ₡150 mil en efectivo</li>
+                                                    <li>2<sup>do</sup> Premio de ₡75 mil en efectivo</li>
+                                                    <li>3<sup>er</sup> Premio de ₡25 mil en efectivo</li>
+                                                </ul>
+                                                <p>La rifa se efectuará el día domingo en combinación de la lotería navideña</p>
+                                            </details>
+                                        </td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card mx-auto" style="max-width: 700px; background-color: #343a40; color: #fff; padding: 20px;">
+                            <h5 class="text-end">Valor de la canasta: <strong>₡240,000</strong></h5>
+                            <hr />
+                            <!-- Pagos de la canasta -->
+                            <div class="row">
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Semanal: </span><strong>₡5,000</strong></p>
+                                </div>
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Quincenal: </span><strong>₡10,000</strong></p>
+                                </div>
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Mensual: </span><strong>₡22,000</strong></p>
+                                </div>
+                            </div>
+                            <!-- Botón de WhatsApp -->
+                            <br/>
+                            <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
+                                <a href="https://wa.me/50688566516?text=https%3A%2F%2Finnocr.com%0ABuen%20d%C3%ADa%2C%20me%20interesa%20la%20Canasta%20Navide%C3%B1a%20%234%2C%0A%C2%BFMe%20podr%C3%ADa%20brindar%20m%C3%A1s%20informaci%C3%B3n%20por%20favor%3F"
+                                    class="btn btn-success btn-lg w-100 w-md-auto" target="_blank">
+                                    Solicitar Canasta Navideña 4
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contenido  Canasta Navideña # 5 -->
+            <div class="tab-pane fade" id="canasta5" role="tabpanel" aria-labelledby="canasta5-tab">
+                <div class="card mx-auto" style="max-width: 900px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Canasta Navideña 5</h5>
+                        <p class="card-text text-center">Contiene los siguientes productos:</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <table class="table table-dark table-striped">
+                                    <tbody>
+                                        <tr><td class="text-center">1</td><td>Pierna de cerdo entera entre 6 y 7 Kg</td></tr>
+                                        <tr><td class="text-center">2</td><td>Kg de bistec de punta de Solomo de Res</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de chuleta ahumada</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de salchichón criollo Cañero</td></tr>
+                                        <tr><td class="text-center">2</td><td>Kg de tocino</td></tr>
+                                        <tr><td class="text-center">2</td><td>Kg de uvas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de peras</td></tr>
+                                        <tr><td class="text-center">1</td><td>Kg de manzanas rojas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Refresco Pepsi de 3 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Refresco Te Frio de 3 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Refresco Coca Cola de 1.5 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de rompope Dos Pinos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de jugo de naranja Dos Pinos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de Baileys</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de Whisky Jhonnie Walker rojo (Sujeto a cambio)</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de Cacique o Ligao (Sujeto a cambio)</td></tr>
+                                        <tr><td class="text-center">1</td><td>Vino Riunite grande</td></tr>
+                                        <tr><td class="text-center">3</td><td>Bebidas Smirnoff (Sabor a escoger)</td></tr>
+                                        <tr><td class="text-center">1</td><td>Six pack de cerveza a escoger</td></tr>
+                                        <tr><td class="text-center">2</td><td>Latas de frutas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de semillas mixtas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de leche condensada Nestlé</td></tr>
+                                        <tr><td class="text-center">1</td><td>Lata de maíz dulce</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de tocineta Preformada</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de Jamón</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de queso amarillo en rodajas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de tacos el Arreo</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de mayonesa</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de Mejitos familiar</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table table-dark table-striped">
+                                    <tbody>
+                                        <tr><td class="text-center">1</td><td>Paquete de Rumba</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de frijoles molidos</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de chocolates Choys</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de Marshmallows</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de papas tostadas familiar</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de café Leyenda</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de empanaditas de piña</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de chocolates surtidos Gallito</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de bombones Bom o Bom de 15 unidades</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de cereal Kellogg's mediana</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de jaleas Tricopilia</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de galletas familiar Pozuelo</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja de galletas Soda de 20 unidades</td></tr>
+                                        <tr><td class="text-center">1</td><td>Chilera Tica</td></tr>
+                                        <tr><td class="text-center">1</td><td>Salsa de tomate</td></tr>
+                                        <tr><td class="text-center">1</td><td>Frasco de Nutella</td></tr>
+                                        <tr><td class="text-center">1</td><td>Queque seco grande</td></tr>
+                                        <tr><td class="text-center">1</td><td>Litro de Tequila</td></tr>
+                                        <tr><td class="text-center">1</td><td>Tamal asado casero</td></tr>
+                                        <tr><td class="text-center">1</td><td>Frasco de palmito</td></tr>
+                                        <tr><td class="text-center">1</td><td>Paquete de rosquillas tipo romanitas</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja plástica de 50 litros</td></tr>
+                                        <tr><td class="text-center">1</td><td>Caja plástica de 120 litros</td></tr>
+                                        <tr><td class="text-center">2</td><td>Fracciones de lotería Navideña</td></tr>
+                                        <tr><td class="text-center">1</td><td>
+                                            <details open>
+                                                <summary>
+                                                    Acción para una rifa de:
+                                                </summary>
+                                                <ul class="list-unstyled mt-3">
+                                                    <li>1<sup>er</sup> Premio de ₡150 mil en efectivo</li>
+                                                    <li>2<sup>do</sup> Premio de ₡75 mil en efectivo</li>
+                                                    <li>3<sup>er</sup> Premio de ₡25 mil en efectivo</li>
+                                                </ul>
+                                                <p>La rifa se efectuará el día domingo en combinación de la lotería navideña</p>
+                                            </details>
+                                        </td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card mx-auto" style="max-width: 700px; background-color: #343a40; color: #fff; padding: 20px;">
+                            <h5 class="text-end">Valor de la canasta: <strong>₡285,000</strong></h5>
+                            <hr />
+                            <!-- Pagos de la canasta -->
+                            <div class="row">
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Semanal: </span><strong>₡6,000</strong></p>
+                                </div>
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Quincenal: </span><strong>₡12,000</strong></p>
+                                </div>
+                                <div class="col-md-4" style="padding:5px;">
+                                    <p class="card-text text-end"><span>Mensual: </span><strong>₡25,000</strong></p>
+                                </div>
+                            </div>
+                            <!-- Botón de WhatsApp -->
+                            <br/>
+                            <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
+                                <a href="https://wa.me/50688566516?text=https%3A%2F%2Finnocr.com%0ABuen%20d%C3%ADa%2C%20me%20interesa%20la%20Canasta%20Navide%C3%B1a%20%235%2C%0A%C2%BFMe%20podr%C3%ADa%20brindar%20m%C3%A1s%20informaci%C3%B3n%20por%20favor%3F"
+                                    class="btn btn-success btn-lg w-100 w-md-auto" target="_blank">
+                                    Solicitar Canasta Navideña 5
+                                </a>
+                            </div>
+                        </div>                      
+                    </div>                    
+                </div>
+            </div>
+            <!-- Contenido Fechas de entrega -->
+            <div class="tab-pane fade" id="fechas" role="tabpanel" aria-labelledby="fechas-tab">
+                <div class="card mx-auto" style="max-width: 900px;">
+                    <div class="text-center my-4">
+                        <h2 style="color: #FF7F50; font-size: 2rem; font-weight: bold;">¡Faltan!</h2>
+                        <div id="countdown" class="countdown"></div>
+                        <p style="font-size: 1.2rem; color: #D3D3D3; margin-top: 10px;">
+                            Las canastas estarán disponibles para ser entregadas desde el
+                            <br />
+                            <strong>15 hasta el 23 de diciembre de 2025</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center text-white py-4 mt-5">
+        <p>
+            El señor es mi pastor y nada me faltara
+            <br/>
+            Muchas bendiciones
+        </p>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-4 mt-5">
+        <div class="container">
+            <p>
+                Desarrollador por <a href="http://innocr.com" target="_blank">InnoCR</a>
+                <br/>
+                &copy; 2025 Inversiones Calvo Medrano. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para el contador -->
+    <script>
+        function startCountdown() {
+            const targetDate = new Date("December 15, 2025 00:00:00");
+            const countdownElement = document.getElementById("countdown");
+
+            setInterval(() => {
+                const now = new Date();
+                let months = (targetDate.getFullYear() - now.getFullYear()) * 12 + (targetDate.getMonth() - now.getMonth());
+                let days = targetDate.getDate() - now.getDate();
+
+                if (days < 0) {
+                    months -= 1;
+                    days += new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate(); // Días restantes en el mes actual
+                }
+
+                countdownElement.innerHTML = `${months} meses y ${days} días`;
+
+                if (months <= 0 && days <= 0) {
+                    countdownElement.innerHTML = "¡Es hora de entregar las canastas!";
+                }
+            }, 1000);
+        }
+
+        startCountdown();
+    </script>
+</body>
+
+</html>
